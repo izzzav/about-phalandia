@@ -6,9 +6,23 @@
 </head>
 <body>
     <header>
-        <img src="phalandia_logo.png" alt="Phalandia Logo" class="logo">
-        <h1>Welcome to Phalandia</h1>
+        <div class="logo-container">
+            <img src="phalandia_logo.png" alt="Phalandia Logo" class="logo">
+            <h1>Welcome to Phalandia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    <section class="hero">
+        <h2>Join Phalandia</h2>
+        <p class="hero-text">A digital nation founded on principles of democracy, unity, and inclusivity.</p>
+        <button class="join-btn" onclick="joinPhalandia()">Join Now</button>
+    </section>
     <main>
         <section>
             <h2>About Us</h2>
@@ -16,7 +30,7 @@
                 Phalandia is a digital nation founded on the principles of democracy, unity, and inclusivity. Our mission is to create a vibrant and welcoming community where individuals from all backgrounds can come together to engage in meaningful discussions, share ideas, and collaborate on projects that contribute to the betterment of society.
             </p>
             <p>
-                As a digital nation, Phalandia embraces diversity and values every citizen's voice. We believe that through open dialogue, mutual respect, and active participation, we can foster a strong sense of belonging and create positive change in our online community. We are also very serious about our rules.
+                As a digital nation, Phalandia embraces diversity and values every citizen's voice. We believe that through open dialogue, mutual respect, and active participation, we can foster a strong sense of belonging and create positive change in our online community.
             </p>
         </section>
         <section>
@@ -30,8 +44,13 @@
         </section>
     </main>
     <footer>
-        <img src="phalandia_logo.png" alt="Phalandia Logo" class="logo">
-        <p>2023 Phalandia</p>
+        <p>&copy; 2023 Phalandia. All rights reserved.</p>
     </footer>
+    <script>
+        function joinPhalandia() {
+            const discordInviteLink = 'https://discord.gg/DsGuuJRY6j';
+            window.location.href = discordInviteLink;
+        }
+    </script>
 </body>
 </html>
